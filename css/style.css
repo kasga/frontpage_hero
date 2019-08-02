@@ -1,0 +1,275 @@
+
+/* FONT FACE */
+
+@font-face {
+  font-family: 'OrstedSansRegular';
+  src: url('../fonts/OrstedSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/OrstedSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/OrstedSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/OrstedSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-style:normal;
+       font-weight:400;
+}
+
+@font-face {
+  font-family: 'OrstedSansLight';
+  src: url('../fonts/OrstedSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/OrstedSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/OrstedSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/OrstedSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-style:normal;
+       font-weight:200
+}
+
+@font-face {
+  font-family: 'OrstedSansBold';
+  src: url('../fonts/OrstedSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/OrstedSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/OrstedSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/OrstedSans-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-style:normal;
+       font-weight:800
+}
+
+body{
+  margin:0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.o-title{
+  font-family: 'OrstedSansRegular', "Helvetica Neue", Arial, sans-serif;
+  font-size: 57px;
+  color:white;
+  width:500px;
+  text-align: left;
+}
+
+.o-title strong{
+  font-family: 'OrstedSansBold', "Helvetica Neue", Arial, sans-serif;
+  font-size: 57px;
+  color:white;
+  text-align: left;
+}
+
+#o-easy{
+  position: relative;
+  display: block;
+  max-width:1440px;
+  margin:0 auto;
+  padding:4%;
+  width:100%;
+  background-color: #e85757;
+  text-align: right;
+}
+
+#o-easy .o-cort{
+  position: absolute;
+  display: block;
+  width: 90%;
+  height:auto;
+  z-index: 0;
+  bottom:100px;
+}
+
+.o-btn-cta{
+  font-family: 'OrstedSansBold', "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  padding:15px 23px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 150px;
+  color: #3b4956;
+  margin: 80px auto 0;
+  z-index: 10;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#o-easy .o-box-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  width:100%;
+  padding:40px;
+  z-index: 10;
+}
+
+#o-easy .o-box{
+  position: relative;
+  align-self: center;
+  width:328px;
+  padding:40px;
+  background-color: white;
+  border-radius: 4px;
+  margin:11px;
+  text-align: center;
+  align-self: stretch;
+}
+
+
+#o-easy .o-box-img{
+  height:auto;
+  width:70px;
+  margin-bottom:15px;
+}
+
+#o-easy .o-box-title{
+  font-family: 'OrstedSansBold', "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  color:#3b4956;
+}
+
+#o-easy .o-box-body{
+  font-family: 'OrstedSansRegular', "Helvetica Neue", Arial, sans-serif;
+  margin-top: 12px;
+  font-size: 19px;
+  color:#3b4956;
+}
+
+
+
+/* TABLET PORTRAIT */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    #o-easy .o-cort{
+      display: none;
+    }
+
+    #o-easy .o-box-container{
+      padding:0;
+      margin-top:20px;
+    }
+
+    #o-easy .o-box{
+      width:100%;
+      margin:20px 11px;
+      padding:30px;
+    }
+
+    .o-btn-cta{
+      font-size: 17px;
+      margin: 40px auto 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* TABLET LANDSCAPE */
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #o-easy .o-cort{
+      display: block;
+      bottom:60px;
+    }
+
+    #o-easy .o-box-container{
+      padding:0;
+      margin-top:20px;
+      justify-content:center;
+      align-items:center;
+      align-content:center;
+    }
+
+    #o-easy .o-box{
+      width:27%;
+      margin:20px 11px;
+      padding:30px;
+    }
+
+    .o-btn-cta{
+      font-size: 17px;
+      margin: 40px auto 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* PHONE LANDSCAPE */
+
+@media only screen
+  and (max-device-width: 767px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+
+
+}
+
+
+
+
+
+/* PHONE PORTRAIT */
+
+@media only screen
+  and (max-device-width: 767px)
+  and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+      #o-easy{
+        padding:30px;
+      }
+
+      .o-title{
+        font-size: 45px;
+        width:100%;
+      }
+
+      .o-title strong{
+        font-size: 45px;
+      }
+
+      #o-easy .o-cort{
+        display: none;
+      }
+
+      #o-easy .o-box-container{
+        flex-direction: column;
+        padding:0;
+        margin-top:20px;
+      }
+
+      #o-easy .o-box{
+        width:100%;
+        margin:20px 0;
+        padding:30px;
+      }
+
+      .o-btn-cta{
+        font-size: 17px;
+        margin: 40px auto 0;
+      }
+
+}
